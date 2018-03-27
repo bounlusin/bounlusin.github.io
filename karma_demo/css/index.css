@@ -1,0 +1,138 @@
+:root {
+	--border-color: #3F51B5;
+	--border-width: 3px;
+	--height: 50px;
+	--button-color: #1f3298;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width: 100px;
+    height: var(--height);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.button-container,
+.counter-container{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.counter-container{
+	border-left: var(--border-width) solid var(--border-color);
+	text-align: center;
+	line-height: calc(var(--height) - 2 * var(--border-width));
+}
+
+.praise-button{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+}
+
+
+.shake{
+	-webkit-animation: shake 0.5s 0s ease both;
+}
+
+@keyframes shake{
+	0%,20%,50%,80%,100%{
+		-webkit-transform:translateY(0)
+	}
+	40%{
+		-webkit-transform:translateY(-6px)
+	}
+	60%{
+		-webkit-transform:translateY(-3px)
+	}
+}
+
+.praise-button .button-child{
+	position: absolute;
+}
+
+.praise-button .button-child:nth-child(1){
+	width: 10px;
+    height: 20px;
+    background: var(--button-color);
+    top: 15px;
+    left: 11px;
+    border-radius: 3px;
+}
+
+.praise-button .button-child:nth-child(2){
+	width: 22px;
+    height: 5px;
+    background: var(--button-color);
+    top: 15px;
+    left: 16px;
+    border-radius: 20px;
+}
+
+.praise-button .button-child:nth-child(3){
+	width: 20px;
+    height: 5px;
+    background: var(--button-color);
+    top: 20px;
+    left: 16px;
+    border-radius: 20px;
+}
+
+.praise-button .button-child:nth-child(4){
+	width: 18px;
+    height: 5px;
+    background: var(--button-color);
+    top: 25px;
+    left: 16px;
+    border-radius: 20px;
+}
+
+.praise-button .button-child:nth-child(5){
+    width: 17px;
+    height: 5px;
+    background: var(--button-color);
+    top: 30px;
+    left: 16px;
+    border-radius: 20px;
+}
+
+.praise-button .button-child:nth-child(6){
+    width: 6px;
+    height: 15px;
+    background: var(--button-color);
+    top: 6px;
+    left: 20px;
+    border-radius: 20px;
+}
+
+.praise-button .button-child:nth-child(7){
+	left: 8px;
+    top: 8px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 9px solid #fff;
+    border-radius: 50%;
+    transform: rotate(137deg) skew(-4deg);
+}
+
+.praise-button .button-child:nth-child(8){
+	width: 8px;
+    height: 8px;
+    background: var(--button-color);
+    left: 15px;
+    top: 11px;
+    z-index: -1;
+}
+
+
